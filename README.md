@@ -1,2 +1,5 @@
-# Dockerfile_k8s
-build k8s image
+在安装k8s的时候，我们提到了依赖的gcr.io/google_containers里的镜像因为GFW的原因取不到
+
+docker hub提供了一个很棒的功能，Automated Build。
+
+把想要build的Docker Image的Dockerfile文件放到github上，然后github上开启对docker hub的授权（读权限就可以了），之后就可以在docker hub上根据这个Dockerfile来自动编译了。
